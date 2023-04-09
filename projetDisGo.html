@@ -1,184 +1,115 @@
-<!doctype html>
-<!--
-	The7 by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html> 
+<!DOCTYPE html>
+<html lang="fr">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Mathis Aubry | Projet DisGo</title> 
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/simplegrid.css">
-        <link rel="stylesheet" href="css/icomoon.css">
-        <link rel="stylesheet" href="css/lightcase.css">
-        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
-        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" /> 
-        <link rel="stylesheet" href="js/owl-carousel/owl.transitions.css" />
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Mathis Aubry">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Page personnelle de Mathis Aubry">
 
-        <!-- Google Fonts -->
+        <title>Mathis Aubry | Projet DisGo</title>
+
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/icomoon.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-           <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-           <!--[if lt IE 9]>
-             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-           <![endif]-->
+        <script src="script/main.js"></script>
     </head>
-    <body id="home">
-        <!-- Header -->
-        <header id="top-header" class="header-home">
-            <div class="grid">
-                <div class="col-1-1">
-                    <div class="content">
-                        <div class="extra9"><a href="index.html" class="extra10">Page Personnelle de Mathis Aubry</a></div>
-                        <nav class="navigation">
-                            <input type="checkbox" id="nav-button">
-                            <label for="nav-button" onclick></label>
-                            <ul class="nav-container">
-                                <li><a href="index.html" class="current">Accueil</a></li>
-                                <li><a href="index.html#services">Compétences</a></li>
-                                <li><a href="index.html#blog">Projets</a></li>
-                                <li><a href="index.html#contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+    <body>
+        <header>
+            <div>
+                <a href="index.html">Page Personnelle de Mathis Aubry</a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="index.html#skills">Compétences</a></li>
+                    <li><a href="index.html#projects">Projets</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        <!-- End Header -->
-
-        <!-- Parallax Section -->
-        <div class="parallax-section parallax1">
-            <div class="grid grid-pad">
-                <div class="col-1-1">
-                    <div class="extra8">
+        <main>
+            <section id="home" class="home-detail">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+                </svg>
+            </section>
+            <section id="projects" class="project-detail">
+                <article>
+                    <img src="images/projetAlizon.png" alt="">
+                    <div>
+                        <h3>DisGo - En cours, 2022-2023</h3>
+                        <p>
+                            L'idée de ce projet personnel m'est venu d'un jeu sur l'application <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord</a> inspiré du jeu "<a href="https://blog.counter-strike.net/fr/index.php/a-propos/" target="_blank" rel="noopener noreferrer">CS:GO</a>". Le but de ce jeu est d'ouvrir des boîtes qui contiennent des objets. Certains sont plus rares que d'autres mais ont moins de chances d'être obtenus. Mon projet consiste à automatiser l'ouverture de ces boîtes en faisant les meilleurs choix, en étudiant les probabilités de chacune des boîtes les unes par rapport aux autres en fonction de l'objet recherché.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Parallax Section -->
-
-        <!-- CurveUp -->
-        <svg class="curveUpColor curveGrey" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
-        </svg>
-
-        <!-- Project Description -->
-        <div class="wrap blog-grid grey">
-            <div class="grid grid-pad extra7">
-                <div class="content">
-                    <h2></h2>
-                    <div class="col-1-1">
-                        <article class="post-wrap">
-                            <div class="post-img">
-                                <img src="images/projetDisgo.png" alt="">
-                            </div>
-                            <div class="extra12">
-                                <h3>DisGo - En cours, 2022-2023</h3>
-                                <p class="extra14">
-                                    L'idée de ce projet personnel m'est venu d'un jeu sur l'application <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord</a>
-                                    inspiré du jeu "<a href="https://blog.counter-strike.net/fr/index.php/a-propos/" target="_blank" rel="noopener noreferrer">CS:GO</a>". Le but de ce jeu 
-                                    est d'ouvrir des boîtes qui contiennent des objets. Certains sont plus rares que d'autres mais ont moins de chances d'être obtenus. 
-                                    Mon projet consiste à automatiser l'ouverture de ces boîtes en faisant les meilleurs choix,
-                                    en étudiant les probabilités de chacune des boîtes les unes par rapport aux autres en fonction de l'objet recherché.
-                                </p>
-                                <h3 class="extra13">Outils</h3>
-                                <p class="extra14">
-                                    Ce projet relie une base de données <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">PostGreSQL</a> pour l'étude des probabilités, 
-                                    un algorithme <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a> qui automatise l'ouverture des boîtes et la collecte 
-                                    d'informations provenant du site internet <a href="https://csgostash.com" target="_blank" rel="noopener noreferrer">CS:GO Stash</a>. 
-                                    J'utilise pour l'instant <a href="https://www.pgadmin.org/">pgAdmin</a> pour mes tests sur la base de données et 
-                                    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a> pour la partie 
-                                    <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a>.
-                                </p>
-                                <h3 id="contact" class="extra13">Acquis</h3>
-                                <p class="extra14">
-                                    Malgré le fait qu'il ne soit pas terminé, ce projet me permet déjà de faire fonctionner plusieurs langages de programmation dans un but commun. 
-                                    J'ai également appris l'utilisation du <a href="https://fr.wikipedia.org/wiki/Version_d%27un_logiciel" target="_blank" rel="noopener noreferrer">"Versioning"</a>
-                                    , c'est-à-dire le fait de distinguer différentes versions de chaque algorithme, pour assurer une meilleure coordination entre les différentes parties du projet.
-                                </p>
-                                <h3 id="contact" class="extra13">Reste à faire</h3>
-                                <p class="extra14">
-                                    Les améliorations envisagées à ce jour sont les suivantes : Optimisation de l'algorithme <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a>
-                                    pour une plus grande autonomie, mise à jour en temps réel des probabilités et donc des choix lors de l'ouverture des boites.
-                                </p>
-                            </div>
-                        </article>
+                    <div>
+                        <h3>Outils</h3>
+                        <p>
+                            Ce projet relie une base de données <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">PostGreSQL</a> pour l'étude des probabilités, un algorithme <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a> qui automatise l'ouverture des boîtes et la collecte d'informations provenant du site internet <a href="https://csgostash.com" target="_blank" rel="noopener noreferrer">CS:GO Stash</a>. J'utilise pour l'instant <a href="https://www.pgadmin.org/">pgAdmin</a> pour mes tests sur la base de données et <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a> pour la partie <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a>.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Project Description -->
-
-        <!-- Parallax Section -->
-        <div class="map extra0">
-            <div class="wrap extra0">
-                <section id="cd-google-map extra0">
-                    <div id="google-container"></div>
-                    <div id="cd-zoom-in"></div>
-                    <div id="cd-zoom-out"></div>
-                </section>
-            </div>
-        </div>
-        <!-- End Parallax Section -->
-
-        <!-- CurveDown -->
-        <svg class="curveDownColor curveGrey" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
-        </svg>
-
-        <!-- Footer -->
-        <footer class="wrap">
-            <div class="grid grid-pad">
-                <div class="col-1-2">
-                    <div class="content">
-                        <div class="footer-widget">
-                            <h3>Contact</h3>
-                            <div class="textwidget">
-                                <p><a href="mailto:mathisaubry.me@gmail.com"><i class="icon-mail6"></i>&emsp;mathisaubry.me@gmail.com</a></p>
-                                <p><a href="https://goo.gl/maps/rKc8L2kAbbKVLMAU9" target="_blank" rel="noopener noreferrer"><i class="icon-house"></i>&emsp;Livré Sur Changeon 35450</a></p>
-                                <p><a href="tel:+33767162050"><i class="icon-phone"></i>&emsp;07 67 16 20 50</a></p>
-                                <p><a href="https://iut-lannion.univ-rennes1.fr/" target="_blank" rel="noopener noreferrer"><i class="icon-study"></i>&emsp;IUT Lannion</a></p>
-                            </div>
-                        </div>
+                    <div>
+                        <h3>Acquis</h3>
+                        <p>
+                            Malgré le fait qu'il ne soit pas terminé, ce projet me permet déjà de faire fonctionner plusieurs langages de programmation dans un but commun. J'ai également appris l'utilisation du <a href="https://fr.wikipedia.org/wiki/Version_d%27un_logiciel" target="_blank" rel="noopener noreferrer">"Versioning"</a>, c'est-à-dire le fait de distinguer différentes versions de chaque algorithme, pour assurer une meilleure coordination entre les différentes parties du projet.
+                        </p>
                     </div>
-                </div>
-                <div class="col-1-2 extra11">
-                    <div class="content">
-                        <div class="footer-widget">
-                            <h3>Navigation</h3>
-                            <div class="textwidget">
-                                <p><a href="index.html#home" class="current">Accueil&emsp;<i class="icon-circles"></i></a></p>
-                                <p><a href="index.html#services">Compétences&emsp;<i class="icon-circles"></i></a></p>
-                                <p><a href="index.html#blog">Projets&emsp;<i class="icon-circles"></i></a></p>
-                                <p><a href="#contact">Contact&emsp;<i class="icon-circles"></i></a></p>
-                            </div>
-                        </div>
+                    <div>
+                        <h3>Reste à faire</h3>
+                        <p>
+                            Les améliorations envisagées à ce jour sont les suivantes : Optimisation de l'algorithme <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a> pour une plus grande autonomie, mise à jour en temps réel des probabilités et donc des choix lors de l'ouverture des boites.
+                        </p>
                     </div>
-                </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+            </svg>
+            <div class="cleanWrap">
+                <address>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <a href="mailto:mathisaubry.me@gmail.com"><i class="icon-mail6"></i>&emsp;mathisaubry.me@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/maps/rKc8L2kAbbKVLMAU9" target="_blank" rel="noopener noreferrer"><i class="icon-house"></i>&emsp;Livré Sur Changeon 35450</a>
+                        </li>
+                        <li>
+                            <a href="tel:+33767162050"><i class="icon-phone"></i>&emsp;07 67 16 20 50</a>
+                        </li>
+                        <li>
+                            <a href="https://iut-lannion.univ-rennes1.fr/" target="_blank" rel="noopener noreferrer"><i class="icon-study"></i>&emsp;IUT Lannion</a>
+                        </li>
+                    </ul>
+                </address>
+                <nav>
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li>
+                            <a href="#home">Accueil&emsp;<i class="icon-circles"></i></a>
+                        </li>
+                        <li>
+                            <a href="#skills">Compétences&emsp;<i class="icon-circles"></i></a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projets&emsp;<i class="icon-circles"></i></a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact&emsp;<i class="icon-circles"></i></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="social-footer">
-                <div class="grid grid-pad">
-                    <div class="col-1-1">
-                        <div class="content">
-                            <p class="source-org copyright">© 2023 | All Rights Reserved Created By <a href="http://templatestock.co" target="_blank" rel="noopener noreferrer">Template Stock</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p></p>
         </footer>
-        <!-- End Footer -->
-
-        <div class="loader-overlay">
-            <div class="loader">
+        <div id="loader-overlay">
+            <div id="loader">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -186,17 +117,5 @@
                 <div class="bar"></div>
             </div>
         </div>
-
-        <!-- JS -->
-        <script src="js/jquery.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/mixitup.js"></script>
-        <script src="js/smoothscroll.js"></script>
-        <script src="js/jquery.nav.js"></script>
-        <script src="js/owl-carousel/owl.carousel.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/lightcase.min.js"></script>
     </body>
 </html>
