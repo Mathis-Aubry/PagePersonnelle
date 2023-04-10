@@ -19,3 +19,16 @@ window.onscroll = function() {
         document.getElementsByTagName("header")[0].style.backgroundColor = "#2c2d31";
     }
 }
+
+//When clicking on anchor links, scrolling smoothly to the target element
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+anchorLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const hash = link.getAttribute('href');
+        const targetElement = document.querySelector(hash);
+        targetElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
