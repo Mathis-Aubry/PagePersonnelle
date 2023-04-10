@@ -165,7 +165,7 @@ main {
 
 @media screen and (max-width: 1012px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     main #projects article, main #projects.project-detail article {
@@ -181,6 +181,10 @@ main {
 
     main #home img {
         width: 10em;
+    }
+
+    main > .btn {
+        display: none;
     }
 }
 
