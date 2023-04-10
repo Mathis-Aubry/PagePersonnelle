@@ -168,7 +168,7 @@ main {
         font-size: 13px;
     }
 
-    main #projects article, main #projects.project-detail article {
+    main #projects article, main #projects.project-detail article, #home div {
         width: 90%;
     }
 
