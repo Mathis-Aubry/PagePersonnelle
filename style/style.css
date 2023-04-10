@@ -164,20 +164,23 @@ main {
 }
 
 @media screen and (max-width: 1012px) {
-    /* h2, main #skills h2, main #projects h2 {
-        font-size: 1.7em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    } */
-
     html {
         font-size: 14px;
     }
 
-    main #projects article {
+    main #projects article, main #projects.project-detail article {
         width: 90%;
+    }
+
+    main #home {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 50em;
+    }
+
+    main #home img {
+        width: 10em;
     }
 }
 
@@ -283,12 +286,6 @@ header nav a {
     position: absolute;
     bottom: 0;
 }
-
-/* @media screen and (max-width: 530px) {
-    #home img {
-        width: 12em;
-    }
-} */
 
 /*
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -486,7 +483,7 @@ header nav a {
     padding: 0 2px;
 }
 
-#projects p {
+#projects article > p {
     width: 90%;
 }
 
