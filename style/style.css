@@ -625,7 +625,7 @@ footer nav {
 */
 
 #home.home-detail {
-    height: 15em;
+    height: 12em;
 }
 
 #home.home-detail svg {
@@ -648,4 +648,5 @@ footer nav {
 
 #projects.project-detail p {
     text-align: justify;
+    width: 90%;
 }
