@@ -31,6 +31,7 @@ h4,h5,h6 {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     color: #484f58;
+    line-height: 1.2em;
 }
 
 body {
@@ -154,41 +155,8 @@ body .btn:hover {
     animation-name: rubberBand;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 .btn {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-}
-
-@media screen and (max-width: 1012px) {
-    html {
-        font-size: 13px;
-    }
-
-    main #projects article, main #projects.project-detail article, #home div, main #skills h2 {
-        width: 90%;
-    }
-
-    main #skills h2 {
-        align-self: center;
-    }
-
-    main #home {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    main > .btn, main #home img {
-        display: none;
-    }
-
-    main #split {
-        height: 20em;
-    }
 }
 
 /*
@@ -198,11 +166,6 @@ main {
 */
 
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
     position: fixed;
     width: 100%;
     padding: 1.2em 0;
@@ -210,13 +173,20 @@ header {
     transition: background-color 0.15s linear;
 }
 
-header nav ul {
+header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header div nav ul {
     display: flex;
     flex-direction: row;
     column-gap: 1em;
 }
 
-header div a {
+header div div a {
     color: white;
 }
 
@@ -224,6 +194,27 @@ header nav a {
     color: white;
     font-size: 0.8em;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+/* Hiding mobile nav menu icon by default */
+header > div > a {
+    display: none;
+}
+
+header i {
+    color: white;
+    font-size: 2.3em;
+}
+
+/* Mobile nav only */
+header > nav {
+    width: 80%;
+}
+
+header > nav ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
 }
 
 /*
@@ -344,7 +335,7 @@ header nav a {
 
 #skills li:first-child {
     row-gap: 1em;
-    height: 11em;
+    height: 12em;
     align-items: center;
 }
 
@@ -357,7 +348,7 @@ header nav a {
 }
 
 #skills li:nth-child(2) {
-    height: 3em;
+    height: 4em;
 }
 
 #skills li:not(:first-child) {
@@ -386,20 +377,6 @@ header nav a {
 #skills p {
     text-align: left;
     text-align-last: left;
-}
-
-#skills + .btn {
-    align-self: center;
-}
-
-@media screen and (max-width: 530px) {
-    #skills li:first-child {
-        height: auto;
-    }
-
-    #skills .cleanList, #skills .cleanWrap {
-        row-gap: 3em;
-    }
 }
 
 /*
@@ -649,4 +626,62 @@ footer nav {
 #projects.project-detail p {
     text-align: justify;
     width: 90%;
+}
+
+/*
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                Media queries                                    ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+*/
+
+@media screen and (max-width: 1012px) 
+{
+    html {
+        font-size: 13px;
+    }
+
+    /* Appearing of the icon to access mobile nav */
+    header > div > a {
+        display: flex;
+    }
+
+    /* Mobile nav style */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0.8em;
+    }
+
+    header > div {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    /* Disappearing of the desktop nav, the footer nav as well with my picture */
+    header > div > nav, footer nav, #home figure {
+        display: none;
+    }
+
+    #projects article, #projects.project-detail article, #home div, #skills h2 {
+        width: 90%;
+    }
+
+    #skills h2 {
+        align-self: center;
+    }
+
+    #split {
+        height: 20em;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #skills li:first-child {
+        height: auto;
+    }
+
+    #skills .cleanList, #skills .cleanWrap {
+        row-gap: 3em;
+    }
 }
