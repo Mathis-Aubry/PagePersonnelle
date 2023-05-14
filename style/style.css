@@ -375,8 +375,7 @@ header > nav ul {
 }
 
 #skills p {
-    text-align: left;
-    text-align-last: left;
+    text-align: center;
 }
 
 /*
