@@ -1,3 +1,1 @@
-# Taximin.github.io
-
-Page personnelle de Mathis AUBRY
+# Page personnelle de Mathis AUBRY
