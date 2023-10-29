@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Page personnelle de Mathis Aubry">
 
-        <title>Mathis Aubry | Projet Alizon</title>
+        <title>Mathis Aubry | Projet</title>
 
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/style.css">
@@ -19,20 +19,7 @@
     <body>
         <?php include 'header.html' ?>
         <main>
-            <?php 
-                $valid = true;
-                if (count($_GET) == 1) {
-                    $project = array_keys($_GET)[0];
-                    if ($_GET[$project] == "") {
-                        $files = scandir("projets/");
-                        foreach ($files as $file) {
-                            if ($file == $project.".html") {
-                                include "projets/".$file;
-                            }
-                        }
-                    }
-                }
-            ?>
+            <?php include $projectName ?>
         </main>
         <?php include 'footer.html' ?>
     </body>
