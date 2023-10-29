@@ -17,24 +17,7 @@
         <script src="script/main.js"></script>
     </head>
     <body>
-        <header>
-            <div>
-                <div>
-                    <a href="/">Page Personnelle de Mathis Aubry</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <a href="">
-                    <i class="icon-list5"></i>
-                </a>
-            </div>
-        </header>
+        <?php include 'header.html' ?>
         <main>
             <section id="home">
                 <figure>
@@ -44,8 +27,8 @@
                     <h2>Bienvenue sur ma page personnelle!</h2>
                     <article>
                         <p>
-                            Je m'appelle Mathis AUBRY, j’ai 19 ans, je suis actuellement en deuxième année de 
-                            <a href="https://iut-lannion.univ-rennes1.fr/informatique" target="_blank" rel="noopener noreferrer">BUT Informatique à Lannion</a> (anciennement DUT). J'ai obtenu mon baccalauréat mention Bien avec les spécialités Mathématiques et Informatique <a href="https://www.education.gouv.fr/reussir-au-lycee/la-specialite-numerique-et-sciences-informatiques-au-bac-325448" target="_blank" rel="noopener noreferrer">(NSI)</a> au lycée Bertrand d’Argentré à <a href="https://goo.gl/maps/SqZH27UN8WMfatMm7" target="_blank" rel="noopener noreferrer">Vitré</a>. Après ma formation de 3 ans, je souhaiterais intégrer une école d'ingénieur afin de me spécialiser.
+                            Je m'appelle Mathis AUBRY, j’ai 20 ans, je suis actuellement en troisième année de 
+                            <a href="https://iut-lannion.univ-rennes1.fr/informatique" target="_blank" rel="noopener noreferrer">BUT Informatique à Lannion</a> (anciennement DUT). J'ai obtenu mon baccalauréat mention Bien avec les spécialités Mathématiques et Informatique <a href="https://www.education.gouv.fr/reussir-au-lycee/la-specialite-numerique-et-sciences-informatiques-au-bac-325448" target="_blank" rel="noopener noreferrer">(NSI)</a> au lycée Bertrand d’Argentré à <a href="https://goo.gl/maps/SqZH27UN8WMfatMm7" target="_blank" rel="noopener noreferrer">Vitré</a>. Après ma formation de 3 ans, je souhaiterais intégrer un master ou une école d'ingénieur afin de me spécialiser.
                         </p>
                     </article>
                     <a class="btn" target="_blank" href="me/CV-MathisAUBRY.pdf" download>Télécharger mon CV</a>
@@ -159,12 +142,10 @@
             </section>
 
             <section id="split">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
-            viewBox="0 0 100 100" preserveAspectRatio="none">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
-            viewBox="0 0 100 100" preserveAspectRatio="none">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
                 </svg>
             </section>
@@ -259,50 +240,6 @@
                 </div>
             </section>
         </main>
-        <footer id="contact">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
-            </svg>
-            <div class="cleanWrap">
-                <address>
-                    <h3>Contact</h3>
-                    <ul>
-                        <li>
-                            <a href="https://goo.gl/maps/rKc8L2kAbbKVLMAU9" target="_blank" rel="noopener noreferrer"><i class="icon-house"></i>&emsp;Livré Sur Changeon 35450</a>
-                        </li>
-                        <li>
-                            <a href="https://iut-lannion.univ-rennes1.fr/" target="_blank" rel="noopener noreferrer"><i class="icon-study"></i>&emsp;IUT Lannion</a>
-                        </li>
-                    </ul>
-                </address>
-                <nav>
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li>
-                            <a href="#home">Accueil&emsp;<i class="icon-circles"></i></a>
-                        </li>
-                        <li>
-                            <a href="#skills">Compétences&emsp;<i class="icon-circles"></i></a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projets&emsp;<i class="icon-circles"></i></a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact&emsp;<i class="icon-circles"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <p></p>
-        </footer>
-        <div id="loader-overlay">
-            <div id="loader">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
+        <?php include 'footer.html' ?>
     </body>
 </html>
