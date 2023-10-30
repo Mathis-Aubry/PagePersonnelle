@@ -15,14 +15,12 @@
             $pageTitle = 'Page Personnelle';
             $pageFile = 'home.html';
             if ($_SERVER['REQUEST_URI'] != '/') {
-                // Routing all projects
-                if (strpos($_SERVER['REQUEST_URI'], 'projets')) {
-                    $projectName = substr($_SERVER['REQUEST_URI'], 1) . '.html';
-                    if (file_exists($projectName)) {
-                        $pageTitle = 'Projet ' . substr($_SERVER['REQUEST_URI'], 8);
-                        $pageFile = $projectName;
-                    } else {echo $projectName;}
-                } else {echo 'dgf';}
+                // Testing if it's a project page 
+                $projectName = substr($_SERVER['REQUEST_URI'], 1);
+                if (file_exists('projets/' . $projectName)) {
+                    $pageTitle = 'Projet ' . ucfirst($projectName);
+                    $pageFile = $projectName . '.html';
+                } else {echo '404';}
             }
         ?>
         <title>Mathis Aubry | <?= $pageTitle ?></title>
