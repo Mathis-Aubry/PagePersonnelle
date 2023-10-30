@@ -12,14 +12,17 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <script src="script/main.js"></script>
         <?php
+            //Home page by default
             $pageTitle = 'Page Personnelle';
             $pageFile = 'home.html';
+
+            // Testing if it's a project page
             if ($_SERVER['REQUEST_URI'] != '/') {
-                // Testing if it's a project page 
                 $projectName = substr($_SERVER['REQUEST_URI'], 1);
-                if (file_exists('projets/' . $projectName)) {
+                $projectFile = 'projets/' . $projectName . '.html';
+                if (file_exists($projectFile)) {
                     $pageTitle = 'Projet ' . ucfirst($projectName);
-                    $pageFile = $projectName . '.html';
+                    $pageFile = $projectName;
                 } else {echo '404';}
             }
         ?>
