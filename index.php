@@ -12,10 +12,6 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <script src="script/main.js"></script>
         <?php
-            ini_set('display_errors', 1);
-            ini_set('display_startup_errors', 1);
-            error_reporting(E_ALL);
-
             //Home page by default
             $pageTitle = 'Page Personnelle';
             $pageFile = 'home.html';
@@ -27,7 +23,7 @@
                 if (file_exists($projectFile)) {
                     $pageTitle = 'Projet ' . ucfirst($projectName);
                     $pageFile = $projectFile;
-                } else {echo '404';}
+                }
             }
         ?>
         <title>Mathis Aubry | <?= $pageTitle ?></title>
