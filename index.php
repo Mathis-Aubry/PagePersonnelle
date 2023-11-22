@@ -36,10 +36,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#home">Accueil</a></li>
+                        <li><a href="/#skills">Compétences</a></li>
+                        <li><a href="/#projects">Projets</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <a href="">
@@ -70,13 +70,13 @@
                     <h3>Navigation</h3>
                     <ul>
                         <li>
-                            <a href="#home">Accueil&emsp;<i class="icon-circles"></i></a>
+                            <a href="/#home">Accueil&emsp;<i class="icon-circles"></i></a>
                         </li>
                         <li>
-                            <a href="#skills">Compétences&emsp;<i class="icon-circles"></i></a>
+                            <a href="/#skills">Compétences&emsp;<i class="icon-circles"></i></a>
                         </li>
                         <li>
-                            <a href="#projects">Projets&emsp;<i class="icon-circles"></i></a>
+                            <a href="/#projects">Projets&emsp;<i class="icon-circles"></i></a>
                         </li>
                         <li>
                             <a href="#contact">Contact&emsp;<i class="icon-circles"></i></a>
