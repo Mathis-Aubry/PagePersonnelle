@@ -39,6 +39,7 @@
                         <li><a href="/#home">Accueil</a></li>
                         <li><a href="/#skills">Compétences</a></li>
                         <li><a href="/#projects">Projets</a></li>
+                        <li><a href="/#experiences">Expériences</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -77,6 +78,9 @@
                         </li>
                         <li>
                             <a href="/#projects">Projets&emsp;<i class="icon-circles"></i></a>
+                        </li>
+                        <li>
+                            <a href="/#experiences">Expériences&emsp;<i class="icon-circles"></i></a>
                         </li>
                         <li>
                             <a href="#contact">Contact&emsp;<i class="icon-circles"></i></a>
