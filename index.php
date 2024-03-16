@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="darkreader-lock">
         <meta name="author" content="Mathis Aubry">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Page personnelle de Mathis Aubry">
@@ -60,7 +61,7 @@
                     <h3>Contact</h3>
                     <ul>
                         <li>
-                            <a href="https://goo.gl/maps/rKc8L2kAbbKVLMAU9" target="_blank" rel="noopener noreferrer"><i class="icon-house"></i>&emsp;Livré Sur Changeon 35450</a>
+                            <a href="https://goo.gl/maps/rKc8L2kAbbKVLMAU9" target="_blank" rel="noopener noreferrer"><i class="icon-house"></i>&emsp;Lannion 22300</a>
                         </li>
                         <li>
                             <a href="https://iut-lannion.univ-rennes1.fr/" target="_blank" rel="noopener noreferrer"><i class="icon-study"></i>&emsp;IUT Lannion</a>
