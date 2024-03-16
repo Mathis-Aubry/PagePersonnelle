@@ -197,7 +197,7 @@ header > nav ul {
     position: relative;
     color: var(--white);
     height: 45em;
-    
+
     /* Parallax */
     background-image: url(../images/home.webp);
     background-size: cover;
@@ -205,7 +205,7 @@ header > nav ul {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-  
+
 #home img {
     border-radius: 3px;
     width: 22em;
@@ -390,6 +390,7 @@ header > nav ul {
 }
 
 #projects img {
+    display: block;
     width: 100%;
     height: auto;
     border-radius: 5px 5px 0 0;
@@ -417,6 +418,8 @@ header > nav ul {
 
 #projects article > p {
     width: 90%;
+    text-align: justify;
+    text-align-last: center;
 }
 
 #projects svg {
@@ -433,7 +436,7 @@ header > nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 2em;
+    row-gap: 5em;
     padding: 2em 0 3em 0;
     background-color: var(--white);
 }
@@ -442,21 +445,29 @@ header > nav ul {
     font-size: 2.8em;
 }
 
-#experiences img {
-    border-radius: 5px;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
-}
-
-#experiences article img {
-    filter: grayscale(70%);
+#experiences > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+    width: 70%;
 }
 
 #experiences article {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     column-gap: 2em;
-    width: 70%;
+}
+
+#experiences article > a {
+    height: fit-content;
+}
+
+#experiences article img {
+    display: block;
+    filter: grayscale(70%);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 
 #experiences article:first-of-type .details {
@@ -477,7 +488,6 @@ header > nav ul {
     justify-content: center;
     row-gap: 1em;
     padding: 2em;
-    width: 100%;
     border: 3px solid #dee3e4;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
@@ -487,9 +497,14 @@ header > nav ul {
     font-size: 1.3em;
 }
 
-#experiences .details b {
+#experiences .details p {
+    padding-left: 1em;
+    text-align: justify;
+    text-align-last: left;
+}
+
+#experiences .details span {
     font-weight: bold;
-    padding-right: 0.5em;
 }
 
 /*
@@ -507,6 +522,10 @@ footer {
 
 footer svg {
     fill: var(--white);
+}
+
+main:has(> #projects:last-child) + footer svg {
+    fill: var(--grey-ground);
 }
 
 footer .cleanWrap {
@@ -620,29 +639,33 @@ footer nav {
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 */
 
-#home.home-detail {
+#home.homeDetail {
     height: 12em;
 }
 
-#home.home-detail svg {
+#home.homeDetail svg {
     fill: var(--grey-ground);
 }
 
-#projects.project-detail article {
+#projects.projectDetail {
+    padding-bottom: 2em;
+}
+
+#projects.projectDetail article {
     align-self: center;
     width: 60%;
     row-gap: 2em;
     padding-bottom: 3em;
 }
 
-#projects.project-detail div {
+#projects.projectDetail div {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1em;
 }
 
-#projects.project-detail p {
+#projects.projectDetail p {
     text-align: justify;
     width: 90%;
 }
@@ -653,12 +676,8 @@ footer nav {
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 */
 
-@media screen and (max-width: 1012px) 
+@media screen and (max-width: 1012px)
 {
-    html {
-        font-size: 13px;
-    }
-
     /* Appearing of the icon to access mobile nav */
     header > div > a {
         display: flex;
@@ -682,7 +701,7 @@ footer nav {
         display: none;
     }
 
-    #projects article, #projects.project-detail article, #home div, #skills h2 {
+    #projects article, #projects.projectDetail article, #home div, #skills h2 {
         width: 90%;
     }
 
@@ -694,7 +713,7 @@ footer nav {
         height: 20em;
     }
 
-    #experiences article {
+    #experiences > div {
         width: 90%;
     }
 }
@@ -708,20 +727,7 @@ footer nav {
         row-gap: 3em;
     }
 
-    #experiences {
-        padding-bottom: 4em;
-    }
-
-    #experiences article {
-        flex-direction: column;
-        row-gap: 2em;
-    }
-
-    #experiences article .details {
-        width: auto;
-    }
-    
-    #experiences img {
+    #experiences article > a {
         display: none;
     }
 }
