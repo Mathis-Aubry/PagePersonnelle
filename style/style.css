@@ -84,6 +84,10 @@ body .btn:hover {
     animation: rubberBand .8s 1;
 }
 
+main {
+    text-align: center;
+}
+
 @keyframes rubberBand {
     0% {
         transform: scale3d(1, 1, 1);
@@ -214,7 +218,6 @@ header > nav ul {
 
 #home h2 {
     color: var(--white);
-    text-align: center;
 }
 
 #home div {
@@ -256,8 +259,8 @@ header > nav ul {
 #skills {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 5em;
-    text-align: center;
     padding: 2em 0;
 }
 
@@ -324,10 +327,6 @@ header > nav ul {
     transition: all .15s linear;
 }
 
-#skills p {
-    text-align: center;
-}
-
 /*
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃                                  Split Section                                  ┃
@@ -366,7 +365,6 @@ header > nav ul {
     display: flex;
     flex-direction: column;
     row-gap: 5em;
-    text-align: center;
     background-color: var(--grey-ground);
     padding-top: 2em;
 }
@@ -495,6 +493,7 @@ header > nav ul {
 
 #experiences .details h3 {
     font-size: 1.3em;
+    text-align: left;
 }
 
 #experiences .details p {
@@ -678,6 +677,10 @@ footer nav {
 
 @media screen and (max-width: 1012px)
 {
+    html {
+        font-size: 13px;
+    }
+
     /* Appearing of the icon to access mobile nav */
     header > div > a {
         display: flex;
@@ -703,10 +706,6 @@ footer nav {
 
     #projects article, #projects.projectDetail article, #home div, #skills h2 {
         width: 90%;
-    }
-
-    #skills h2 {
-        align-self: center;
     }
 
     #split {
