@@ -102,3 +102,12 @@ anchorLinks.forEach(link => {
         });
     });
 });
+
+//Temporary until I can find something better
+document.addEventListener('DOMContentLoaded', () => {
+  let main = document.querySelector('main');
+  if (main.querySelector('.projectDetail')) {
+    document.querySelector('footer svg').style.fill = '#ecf0f1';
+  }
+});
+
